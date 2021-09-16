@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { NavLink  as Link } from 'react-router-dom'
+import {FiGrid} from 'react-icons/fi'
 
 export const Nav = styled.nav`
-    background: orangered;
+    background: transparent;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -22,4 +23,23 @@ export const NavLink = styled(Link)`
         top: 10px;
         left: 25px;
     }
+`;
+
+export const NavIcon = styled.div`
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #fff;
+
+    p {
+        transform: translate(-175%, 100%);
+        font-weight: bold;
+    }
+`;
+
+export const Bars = styled(FiGrid)`
+    font-size: 1.5rem;
+    transform: translate(-70%, 10%);
 `
