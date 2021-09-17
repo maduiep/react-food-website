@@ -15,7 +15,11 @@ export const  HeroContent = styled.div`
     height: calc(100vh - 80px);
     max-height: 100%;
     width: 100vw;
-    padding: 0rem calc((100w - 1300px) / 2)
+    padding: 0rem calc((100w - 1300px) / 2);
+
+    @media screen and (max-width: 650px) {
+        margin-top: 1rem;
+    }
 `;
 
 
@@ -44,12 +48,20 @@ export const  HeroH1 = styled.h1`
     margin-bottom: 1rem; 
     box-shadow: 3px 5px #e9ba23;
     letter-spacing: 3px;
+
+    @media screen and (max-width: 650px) {
+        font-size: clamp(1rem, 5vw, 2rem);
+    }
 `;
 
 
 export const  HeroP = styled.p`
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 650px) {
+        font-size: clamp(1rem, 1vw, 1rem);
+    }
 `;
 
 export const  HeroBtn = styled.button`
