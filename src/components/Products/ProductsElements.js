@@ -30,7 +30,7 @@ export const ProductImg = styled.img`
 `
 
 export const ProductHeading = styled.h1`
-    font-size: clamp(2rem, 2.5rem, 3rem);
+    font-size: clamp(1rem, 2.5rem, 3rem);
     text-align: center;
     margin-bottom: 5rem;
 `
